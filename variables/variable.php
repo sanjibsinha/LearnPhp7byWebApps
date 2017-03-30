@@ -12,9 +12,9 @@
     <title>Learn PHP 7 by Web Apps</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="public/css/simple-sidebar.css" rel="stylesheet">
+    <link href="../public/css/simple-sidebar.css" rel="stylesheet">
 
 </head>
 
@@ -26,40 +26,42 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <?php
-                    define("HOME", "/");   
-                    define("VARIABLES", "variables/index.php");                    
-                    ?>
                     <a href="#">
                         PHP 7
                     </a>
                 </li>
                 <li>
+                    <a href="../index.php">Home</a>
+                </li>
+                <li>
                     <a href="#">Dashboard</a>
                 </li>
                 <li>
-                    <a href="<?php echo VARIABLES; ?>">Variable Page</a>
+                    <a href="index.php">Variables</a>
                 </li>
                 
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-
+       
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
+                    <?php
+                        // it's a variable page
+                        $variable2 = "This is our second variable";
+                     ?>
                     <div class="col-lg-12">
                         <h1>Learn PHP 7 by Web Apps</h1>
-                        <h2>This is our Home page</h2>
                         <p>
                             
                             <?php
 
                                 // it's a variable page
-                            $variable = "This is our first variable";
+                            $variable1 = "This is our first variable";
                             
-                            echo $variable;
+                            echo $variable2;
 
                              ?> 
                         </p>
@@ -76,10 +78,10 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="public/js/jquery.js"></script>
+    <script src="../public/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/public/js/bootstrap.min.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>

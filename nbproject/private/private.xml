@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/opt/lampp/htdocs/php7-scratch/downloadcounter/download_titles.sql</file>
-            <file>file:/opt/lampp/htdocs/php7-scratch/downloadcounter/admin.php</file>
-            <file>file:/opt/lampp/htdocs/php7-scratch/downloadcounter/config.php</file>
+            <file>file:/opt/lampp/htdocs/php7-scratch/variables/global-constants.php</file>
+            <file>file:/opt/lampp/htdocs/php7-scratch/variables/variable.php</file>
+            <file>file:/opt/lampp/htdocs/php7-scratch/variables/constants.php</file>
             <file>file:/opt/lampp/htdocs/php7-scratch/variables/index.php</file>
-            <file>file:/opt/lampp/htdocs/php7-scratch/downloadcounter/download.php</file>
         </group>
     </open-files>
 </project-private>

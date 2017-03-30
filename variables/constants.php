@@ -12,32 +12,29 @@
     <title>Learn PHP 7 by Web Apps</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="public/css/simple-sidebar.css" rel="stylesheet">
+    <link href="../public/css/simple-sidebar.css" rel="stylesheet">
 
 </head>
 
 <body>
-
+                   
     <div id="wrapper">
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <?php
-                    define("HOME", "/");   
-                    define("VARIABLES", "variables/index.php");                    
-                    ?>
                     <a href="#">
                         PHP 7
                     </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="http://localhost/php7-scratch/index.php">Dashboard</a>
                 </li>
                 <li>
+                    <?php include 'global-constants.php'; ?>
                     <a href="<?php echo VARIABLES; ?>">Variable Page</a>
                 </li>
                 
@@ -51,17 +48,20 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>Learn PHP 7 by Web Apps</h1>
-                        <h2>This is our Home page</h2>
-                        <p>
-                            
+                        <h2>PHP 7 Constants Page</h2>
+                        <p>                           
                             <?php
-
-                                // it's a variable page
-                            $variable = "This is our first variable";
-                            
+                            // a simple variable
+                            $variable = "I am a simple variable.";
+                            // Constants page
+                            define("OUR_CONSTANTS", "This is our first constant.");
                             echo $variable;
-
-                             ?> 
+                            echo '<br>';
+                            echo OUR_CONSTANTS;
+                            echo '<br>';
+                            //define("OUR_CONSTANTS", "This is our second constant.");
+                            //echo OUR_CONSTANTS;
+                            ?> 
                         </p>
                         <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
                         <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
@@ -76,10 +76,10 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <script src="public/js/jquery.js"></script>
+    <script src="../public/js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="/public/js/bootstrap.min.js"></script>
+    <script src="../public/js/bootstrap.min.js"></script>
 
     <!-- Menu Toggle Script -->
     <script>
